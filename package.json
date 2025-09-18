@@ -1,0 +1,23 @@
+{
+  "name": "hospital-management-system",
+  "version": "1.0.0",
+  "description": "A comprehensive hospital management application built with Node.js, Express, MongoDB, and React.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "backend:dev": "cd backend && npm run dev",
+    "backend:start": "cd backend && npm start",
+    "frontend:dev": "cd frontend && npm start",
+    "frontend:build": "cd frontend && npm run build",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "install:all": "npm run install:backend && npm run install:frontend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["hospital", "management", "healthcare", "nodejs", "express", "mongodb", "react"],
+  "author": "",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
